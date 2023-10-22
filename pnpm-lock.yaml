@@ -6,28 +6,28 @@ settings:
 
 dependencies:
   '@plasmicapp/loader-nextjs':
-    specifier: 1.0.136
-    version: 1.0.136(next@13.5.6)(react-dom@18.1.0)(react@18.1.0)
+    specifier: 1.0.333
+    version: 1.0.333(next@13.5.6)(react-dom@18.2.0)(react@18.2.0)
   next:
     specifier: latest
-    version: 13.5.6(react-dom@18.1.0)(react@18.1.0)
+    version: 13.5.6(react-dom@18.2.0)(react@18.2.0)
   react:
-    specifier: 18.1.0
-    version: 18.1.0
+    specifier: 18.2.0
+    version: 18.2.0
   react-dom:
-    specifier: 18.1.0
-    version: 18.1.0(react@18.1.0)
+    specifier: 18.2.0
+    version: 18.2.0(react@18.2.0)
 
 devDependencies:
   '@types/node':
-    specifier: 17.0.41
-    version: 17.0.41
+    specifier: 20.8.7
+    version: 20.8.7
   '@types/react':
     specifier: 18.0.12
     version: 18.0.12
   typescript:
-    specifier: 4.7.3
-    version: 4.7.3
+    specifier: 5.2.2
+    version: 5.2.2
 
 packages:
 
@@ -116,110 +116,137 @@ packages:
     dev: false
     optional: true
 
-  /@plasmicapp/host@1.0.54(react-dom@18.1.0)(react@18.1.0):
-    resolution: {integrity: sha512-zgQ6vS1p7bUDbzADuuHgvzWGWSztkNIHuMPjihXv28rBk77TzEw3gS1eXSNeCW9PH4QQ6gbfLY9eLLIYxL/PBw==}
+  /@plasmicapp/data-sources-context@0.1.17(react@18.2.0):
+    resolution: {integrity: sha512-vCAcgcxT6+MOn+rGlVszGDHPqBTGszzNZ4FuwXkX5RjN4W7VG8Vep6qpZC2KUZI0KpjGmGq3uLkeK4BcvciRzA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@plasmicapp/host@1.0.177(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-TqipEiPaTZyz8wqQe/XJrdDAs0SIB99QINxZwtgvGjil47biFO0dhCk8Mv1JsrKyRTxRu5MCBToND8xpatXsBQ==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
-      react: 18.1.0
-      react-dom: 18.1.0(react@18.1.0)
+      '@plasmicapp/query': 0.1.74(react@18.2.0)
+      csstype: 3.1.2
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
       window-or-global: 1.0.1
     dev: false
 
-  /@plasmicapp/loader-core@1.0.73:
-    resolution: {integrity: sha512-SYbZNA9ponB5CpJ82rm0CcmrJxTrGhLi06d1aZtKMAkmpxfbmEn1NpK6uzVnMiEGLnmh05COeXSaGqvwlg+JAA==}
-    engines: {node: '>=10'}
+  /@plasmicapp/isomorphic-unfetch@1.0.3:
+    resolution: {integrity: sha512-cJtPOCf2/FWlFB42Q/n0MK/C47NSZr+YQJbCvQwvyjOrOgOQ4gJ/+gkr4avpMa7UPMa8qLovDAuaR+5k+hMlZQ==}
     dependencies:
-      '@plasmicapp/loader-fetcher': 1.0.3
-    transitivePeerDependencies:
-      - encoding
+      unfetch: 4.2.0
     dev: false
 
-  /@plasmicapp/loader-edge@1.0.7:
-    resolution: {integrity: sha512-N3uWwl+bjSmwmdMJ/JrH3iwdYPXtW9vJ8jp3qxAPtnTjyoD/99YKVoZLTi4We4bBp8dG9I/Fj3jaX/VJhVaw3w==}
+  /@plasmicapp/loader-core@1.0.115:
+    resolution: {integrity: sha512-Ip/I4kuBFnsOB7DrCTrkhOCfSCGYknDTH83qiWpbQdYwCxWCHUsCtY3P3j9K8U4NYjFgy3OL4d0EkAtOvoBCTw==}
     engines: {node: '>=10'}
     dependencies:
-      '@plasmicapp/loader-fetcher': 1.0.3
-      '@plasmicapp/loader-splits': 1.0.6
-    transitivePeerDependencies:
-      - encoding
+      '@plasmicapp/isomorphic-unfetch': 1.0.3
+      '@plasmicapp/loader-fetcher': 1.0.37
     dev: false
 
-  /@plasmicapp/loader-fetcher@1.0.3:
-    resolution: {integrity: sha512-7gxpK4tZxZmGkDVpX8uvPyyBx4mnemruGcZ2z5axQtec8iAmGSMeOKyiTb2Mn2fe3zchPEeeZWRHpf/C1pKTLQ==}
+  /@plasmicapp/loader-edge@1.0.46:
+    resolution: {integrity: sha512-r3PA6ARF3EDWma5kwHOgPu/meed7hkKnkDp2aUWiHQKe7X0eRDWXpId/+2uYVzh8p1sjIxiINK6P9Bv1jVuXrQ==}
     engines: {node: '>=10'}
     dependencies:
-      isomorphic-unfetch: 3.1.0
-    transitivePeerDependencies:
-      - encoding
+      '@plasmicapp/loader-splits': 1.0.43
     dev: false
 
-  /@plasmicapp/loader-nextjs@1.0.136(next@13.5.6)(react-dom@18.1.0)(react@18.1.0):
-    resolution: {integrity: sha512-REzgXk2d4BSVgkXCpZFi9bm7bUWft7WjUk23DCJ9A0Yhh5nb6abIaE9AYkQmCNSYinaiGkcD8hHXA6Ag8Tw6Gw==}
+  /@plasmicapp/loader-fetcher@1.0.37:
+    resolution: {integrity: sha512-yLrOGklV8FNeyNteumzuE99zvPVGvNTT7TuLQISMvCkisY+pg4NY6gDxSUvDut65waBH0ie/ZdG6jUtkqb0kBg==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@plasmicapp/isomorphic-unfetch': 1.0.3
+    dev: false
+
+  /@plasmicapp/loader-nextjs@1.0.333(next@13.5.6)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Uhkeeig9UhZQqLgH5QPuV3bd1jE4Z5ZsJgvoxmsL96XrGEuxEO2wUPLq02HQ+EgJtXuNTgbb5bSPZsVCJ/nCKQ==}
     engines: {node: '>=10'}
     peerDependencies:
       next: '>=10.1.0'
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
-      '@plasmicapp/loader-core': 1.0.73
-      '@plasmicapp/loader-edge': 1.0.7
-      '@plasmicapp/loader-react': 1.0.131(react-dom@18.1.0)(react@18.1.0)
-      '@plasmicapp/watcher': 1.0.66
-      next: 13.5.6(react-dom@18.1.0)(react@18.1.0)
-      react: 18.1.0
-      react-dom: 18.1.0(react@18.1.0)
+      '@plasmicapp/loader-core': 1.0.115
+      '@plasmicapp/loader-edge': 1.0.46
+      '@plasmicapp/loader-react': 1.0.312(react-dom@18.2.0)(react@18.2.0)
+      '@plasmicapp/watcher': 1.0.78
+      next: 13.5.6(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      server-only: 0.0.1
     transitivePeerDependencies:
       - bufferutil
-      - encoding
       - supports-color
       - utf-8-validate
     dev: false
 
-  /@plasmicapp/loader-react@1.0.131(react-dom@18.1.0)(react@18.1.0):
-    resolution: {integrity: sha512-vqpDSaGtyRJ9jLpB86fTff+zI2AVJkVfk0L9z0UQXgz6ZeMhNeLE33jAUqlGqgTyUnhuxjH1n5f/OVgsiGtlyA==}
+  /@plasmicapp/loader-react@1.0.312(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-nUu9TJrlu5/innWFTz1rvJx4NQgm/yLNZwK27cbLufQCYzec4FBdGEr4Ywr7IMHb4OHTzJOJG3ZsEDmFjTeJ3Q==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
-      '@plasmicapp/host': 1.0.54(react-dom@18.1.0)(react@18.1.0)
-      '@plasmicapp/loader-core': 1.0.73
-      '@plasmicapp/loader-splits': 1.0.6
-      '@plasmicapp/query': 0.1.49(react@18.1.0)
+      '@plasmicapp/data-sources-context': 0.1.17(react@18.2.0)
+      '@plasmicapp/host': 1.0.177(react-dom@18.2.0)(react@18.2.0)
+      '@plasmicapp/loader-core': 1.0.115
+      '@plasmicapp/loader-splits': 1.0.43
+      '@plasmicapp/prepass': 1.0.9(react-dom@18.2.0)(react@18.2.0)
+      '@plasmicapp/query': 0.1.74(react@18.2.0)
       pascalcase: 1.0.0
-      react: 18.1.0
-      react-dom: 18.1.0(react@18.1.0)
-      react-is: 17.0.2
-      react-ssr-prepass: 1.5.0(react@18.1.0)
-    transitivePeerDependencies:
-      - encoding
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      server-only: 0.0.1
     dev: false
 
-  /@plasmicapp/loader-splits@1.0.6:
-    resolution: {integrity: sha512-E5V3++wGu4bK+FBfvCP+6DUCdaTUVjH53p2NDrXGwGjLX8sLoEutUelAradl7V70D1wJUSC1Gb8oewquIK/axA==}
+  /@plasmicapp/loader-splits@1.0.43:
+    resolution: {integrity: sha512-XdSiD/N9ddD/HTjsk6EUhU0SSLFzQl0G4vlapdcHIBI9vBZRLAJQLGPIS98OJJnEK3DsE7j4kMYzKevoE/bycQ==}
     engines: {node: '>=10'}
     dependencies:
-      '@plasmicapp/loader-fetcher': 1.0.3
       json-logic-js: 2.0.2
-    transitivePeerDependencies:
-      - encoding
     dev: false
 
-  /@plasmicapp/query@0.1.49(react@18.1.0):
-    resolution: {integrity: sha512-s3AkY6JnnY5pzJ37hXb6ExBL0pOdXncHswS1a9uKKh1qfZUKoigHJNKQghwshmrwTl6PzetVFps7kreev5TMZg==}
+  /@plasmicapp/prepass@1.0.9(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-0iG7iCD/Kf0I1Qaxw/steVPm3p2ciBPeA8Xa4i/E34gEat5qRsGl6cMi4V2EaPLWOF4cL6B+PEdtHCmZBscOGw==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@plasmicapp/query': 0.1.74(react@18.2.0)
+      '@plasmicapp/react-ssr-prepass': 2.0.3(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@plasmicapp/query@0.1.74(react@18.2.0):
+    resolution: {integrity: sha512-5ZwplvH/ObqBFTgB3hG2nA72F5DqV8bCsDnxM/O+Z8o1IsFRI4xkdj1pMQY/bkrLshMFA6uu6jZJTPU/dRnxJA==}
     engines: {node: '>=10'}
     peerDependencies:
-      react: '>=16'
+      react: '>=16.8.0'
     dependencies:
-      react: 18.1.0
-      react-ssr-prepass: 1.5.0(react@18.1.0)
-      swr: 2.2.4(react@18.1.0)
+      react: 18.2.0
+      swr: 1.3.0(react@18.2.0)
     dev: false
 
-  /@plasmicapp/watcher@1.0.66:
-    resolution: {integrity: sha512-6DLx/MtqqsHWyJJVINFEAPLlrcj1SIHz8t5vQ67B8TUD5pKinCNCZP8yXSymbN+l9s4xqlzPokH1m2xZh5ecdw==}
+  /@plasmicapp/react-ssr-prepass@2.0.3(react@18.2.0):
+    resolution: {integrity: sha512-jFde/wfL8NlJEr76Mshyju/3GvJD5Z9YijCG1/8DR+KOEv7m5uRvORjxtEEw2GKDXRp2GqpQqj97iWGLFUsOzA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@plasmicapp/watcher@1.0.78:
+    resolution: {integrity: sha512-YvBtGMkI6pvqgagwP72Rr5btZ3iJsIOyInH7XsT3vDopWaQfrEm2oB4sVwxUxnsxnUZPniH/LHCwn4QJsPmdfQ==}
     engines: {node: '>=10'}
     dependencies:
       socket.io-client: 4.7.2
@@ -239,8 +266,10 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@types/node@17.0.41:
-    resolution: {integrity: sha512-xA6drNNeqb5YyV5fO3OAEsnXLfO7uF0whiOfPTz5AeDo8KeZFmODKnvwPymMNO8qE/an8pVY/O50tig2SQCrGw==}
+  /@types/node@20.8.7:
+    resolution: {integrity: sha512-21TKHHh3eUHIi2MloeptJWALuCu5H7HQTdTrWIFReA8ad+aggoX+lRes3ex7/FtpC+sVUpFMQ+QTfYr74mruiQ==}
+    dependencies:
+      undici-types: 5.25.3
     dev: true
 
   /@types/prop-types@15.7.9:
@@ -276,7 +305,6 @@ packages:
 
   /csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
-    dev: true
 
   /debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -317,15 +345,6 @@ packages:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
     dev: false
 
-  /isomorphic-unfetch@3.1.0:
-    resolution: {integrity: sha512-geDJjpoZ8N0kWexiwkX8F9NkTsXhetLPVbZFQ+JTW239QNOwvB0gniuR1Wc6f0AMTn7/mFGyXvHTifrCp/GH8Q==}
-    dependencies:
-      node-fetch: 2.7.0
-      unfetch: 4.2.0
-    transitivePeerDependencies:
-      - encoding
-    dev: false
-
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
     dev: false
@@ -351,7 +370,7 @@ packages:
     hasBin: true
     dev: false
 
-  /next@13.5.6(react-dom@18.1.0)(react@18.1.0):
+  /next@13.5.6(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Y2wTcTbO4WwEsVb4A8VSnOsG1I9ok+h74q0ZdxkwM3EODqrs4pasq7O0iUxbcS9VtWMicG7f3+HAj0r1+NtKSw==}
     engines: {node: '>=16.14.0'}
     hasBin: true
@@ -371,9 +390,9 @@ packages:
       busboy: 1.6.0
       caniuse-lite: 1.0.30001551
       postcss: 8.4.31
-      react: 18.1.0
-      react-dom: 18.1.0(react@18.1.0)
-      styled-jsx: 5.1.1(react@18.1.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      styled-jsx: 5.1.1(react@18.2.0)
       watchpack: 2.4.0
     optionalDependencies:
       '@next/swc-darwin-arm64': 13.5.6
@@ -388,18 +407,6 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
-    dev: false
-
-  /node-fetch@2.7.0:
-    resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
-    engines: {node: 4.x || >=6.0.0}
-    peerDependencies:
-      encoding: ^0.1.0
-    peerDependenciesMeta:
-      encoding:
-        optional: true
-    dependencies:
-      whatwg-url: 5.0.0
     dev: false
 
   /pascalcase@1.0.0:
@@ -420,39 +427,31 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
-  /react-dom@18.1.0(react@18.1.0):
-    resolution: {integrity: sha512-fU1Txz7Budmvamp7bshe4Zi32d0ll7ect+ccxNu9FlObT605GOEB8BfO4tmRJ39R5Zj831VCpvQ05QPBW5yb+w==}
+  /react-dom@18.2.0(react@18.2.0):
+    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
-      react: ^18.1.0
+      react: ^18.2.0
     dependencies:
       loose-envify: 1.4.0
-      react: 18.1.0
-      scheduler: 0.22.0
+      react: 18.2.0
+      scheduler: 0.23.0
     dev: false
 
-  /react-is@17.0.2:
-    resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
-    dev: false
-
-  /react-ssr-prepass@1.5.0(react@18.1.0):
-    resolution: {integrity: sha512-yFNHrlVEReVYKsLI5lF05tZoHveA5pGzjFbFJY/3pOqqjGOmMmqx83N4hIjN2n6E1AOa+eQEUxs3CgRnPmT0RQ==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.1.0
-    dev: false
-
-  /react@18.1.0:
-    resolution: {integrity: sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ==}
+  /react@18.2.0:
+    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
     dev: false
 
-  /scheduler@0.22.0:
-    resolution: {integrity: sha512-6QAm1BgQI88NPYymgGQLCZgvep4FyePDWFpXVK+zNSUgHwlqpJy8VEh8Et0KxTACS4VWwMousBElAZOH9nkkoQ==}
+  /scheduler@0.23.0:
+    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
+
+  /server-only@0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
     dev: false
 
   /socket.io-client@4.7.2:
@@ -489,7 +488,7 @@ packages:
     engines: {node: '>=10.0.0'}
     dev: false
 
-  /styled-jsx@5.1.1(react@18.1.0):
+  /styled-jsx@5.1.1(react@18.2.0):
     resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
     engines: {node: '>= 12.0.0'}
     peerDependencies:
@@ -503,43 +502,33 @@ packages:
         optional: true
     dependencies:
       client-only: 0.0.1
-      react: 18.1.0
+      react: 18.2.0
     dev: false
 
-  /swr@2.2.4(react@18.1.0):
-    resolution: {integrity: sha512-njiZ/4RiIhoOlAaLYDqwz5qH/KZXVilRLvomrx83HjzCWTfa+InyfAjv05PSFxnmLzZkNO9ZfvgoqzAaEI4sGQ==}
+  /swr@1.3.0(react@18.2.0):
+    resolution: {integrity: sha512-dkghQrOl2ORX9HYrMDtPa7LTVHJjCTeZoB1dqTbnnEDlSvN8JEKpYIYurDfvbQFUUS8Cg8PceFVZNkW0KNNYPw==}
     peerDependencies:
       react: ^16.11.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      client-only: 0.0.1
-      react: 18.1.0
-      use-sync-external-store: 1.2.0(react@18.1.0)
-    dev: false
-
-  /tr46@0.0.3:
-    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
+      react: 18.2.0
     dev: false
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: false
 
-  /typescript@4.7.3:
-    resolution: {integrity: sha512-WOkT3XYvrpXx4vMMqlD+8R8R37fZkjyLGlxavMc4iB8lrl8L0DeTcHbYgw/v0N/z9wAFsgBhcsF0ruoySS22mA==}
-    engines: {node: '>=4.2.0'}
+  /typescript@5.2.2:
+    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+    engines: {node: '>=14.17'}
     hasBin: true
+    dev: true
+
+  /undici-types@5.25.3:
+    resolution: {integrity: sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==}
     dev: true
 
   /unfetch@4.2.0:
     resolution: {integrity: sha512-F9p7yYCn6cIW9El1zi0HI6vqpeIvBsr3dSuRO6Xuppb1u5rXpCPmMvLSyECLhybr9isec8Ohl0hPekMVrEinDA==}
-    dev: false
-
-  /use-sync-external-store@1.2.0(react@18.1.0):
-    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.1.0
     dev: false
 
   /watchpack@2.4.0:
@@ -548,17 +537,6 @@ packages:
     dependencies:
       glob-to-regexp: 0.4.1
       graceful-fs: 4.2.11
-    dev: false
-
-  /webidl-conversions@3.0.1:
-    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
-    dev: false
-
-  /whatwg-url@5.0.0:
-    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
-    dependencies:
-      tr46: 0.0.3
-      webidl-conversions: 3.0.1
     dev: false
 
   /window-or-global@1.0.1:
